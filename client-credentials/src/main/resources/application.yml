@@ -1,0 +1,41 @@
+server:
+  port: 7788
+
+
+spring:
+#  datasource:
+#    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/oauth2?useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: root
+#    driver-class-name: net.sf.log4jdbc.DriverSpy
+  redis:
+    host: 127.0.0.1
+    database: 2
+    password: communityserver
+  datasource:
+      url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8
+      username: test
+      password: 12345678
+  jpa:
+    database: MYSQL
+    show-sql: true
+    ## Hibernate ddl auto (validate|create|create-drop|update)
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+#  jpa:
+#    hibernate:
+#      ddl-auto: none
+
+#logging:
+#  level:
+#    jdbc: error
+#    jdbc.sqltiming: info
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
