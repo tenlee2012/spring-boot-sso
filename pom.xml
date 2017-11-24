@@ -15,6 +15,7 @@
         <module>web1</module>
         <module>web2</module>
         <module>resource</module>
+        <module>client-credentials</module>
     </modules>
 
     <parent>
