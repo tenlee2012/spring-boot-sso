@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
       url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8
-      username: root
+      username: test
       password: 12345678
   jpa:
     database: MYSQL
@@ -23,6 +23,6 @@ security:
   oauth2:
       resource:
         jwt:
-          keyUri: http://localhost/oauth/token_key
+          keyUri: http://localhost:8000/oauth/token_key
 
 
